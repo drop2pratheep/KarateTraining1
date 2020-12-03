@@ -20,6 +20,7 @@ class KarateReportTest1 {
         generateReport(res.getReportDir());
     }
 
+
     public static void generateReport(String resDir)
     {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(resDir), new String[] {"json"}, true);
