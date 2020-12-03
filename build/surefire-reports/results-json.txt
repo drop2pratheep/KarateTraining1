@@ -1,0 +1,1 @@
+{"features":2,"ignored":20,"efficiency":0.5266909430826756,"failures":{"FeatureFiles.Karate04":"Karate04.feature:26 - assert evaluated to false: responseTime <= 500"},"totalTime":1267.7451,"threads":1,"scenarios":2,"failed":1,"passed":1,"version":"0.9.6","elapsedTime":2407.0}

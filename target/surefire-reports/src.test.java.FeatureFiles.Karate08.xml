@@ -1,0 +1,14 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/Karate08.feature" skipped="0" tests="1" time="0.620182">
+  <testcase classname="src.test.java.FeatureFiles.Karate08" name="Rest API Testing" time="0.620182">
+    <system-out>Given url "http://dummy.restapiexample.com/api/v1/employees" .............. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.status == "success" .................................... passed
+* match responseType == "json" ............................................ passed
+* assert responseTime &lt;= 2000 ............................................. passed
+* match response.status == "#string" ...................................... passed
+* match response.data == "#array" ......................................... passed
+* print response.data[0].employee_name .................................... passed
+* match response.data[0].employee_name contains "Tiger Nixon" ............. passed</system-out>
+  </testcase>
+</testsuite>

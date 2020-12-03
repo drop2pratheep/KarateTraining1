@@ -1,0 +1,17 @@
+<testsuite failures="1" name="src/test/java/FeatureFiles/Sample.feature" skipped="0" tests="1" time="0">
+  <testcase classname="src.test.java.FeatureFiles.Sample" name="First Karate test case" time="0">
+    <failure message="Sample.feature:8 - no step-definition method match found for: This is given precondition step-1">Given This is given precondition step-1 ................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: Sample.feature:8 - no step-definition method match found for: This is given precondition step-1&#13;
+	at ✽.Given This is given precondition step-1 (Sample.feature:8)&#13;
+
+And This is given precondition step-2 ..................................... skipped
+Given This is given precondition step-1 ................................... skipped
+And This is given precondition step-2 ..................................... skipped
+When This is given Action step-1 .......................................... skipped
+And This is given Action step-2 ........................................... skipped
+Then This is Validation step-1 ............................................ skipped
+And This is Validation step-2 ............................................. skipped</failure>
+  </testcase>
+</testsuite>

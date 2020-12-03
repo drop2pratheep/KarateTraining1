@@ -1,0 +1,7 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/ResponseToFile.feature" skipped="0" tests="1" time="0.094622">
+  <testcase classname="src.test.java.FeatureFiles.ResponseToFile" name="Example2" time="0.094622">
+    <system-out>* def custid = 1234 ....................................................... passed
+* def res2 = read("classpath:res2.json") .................................. passed
+* print res2 .............................................................. passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,1 @@
+{"features":1,"ignored":0,"efficiency":0.0,"failures":{"src.test.java.FeatureFiles.Sample":"Sample.feature:8 - no step-definition method match found for: This is given precondition step-1"},"totalTime":0.0,"threads":1,"scenarios":1,"failed":1,"passed":0,"version":"0.9.6","elapsedTime":735.0}

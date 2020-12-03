@@ -1,0 +1,50 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/karateDBTesting.feature" skipped="0" tests="4" time="0.601097">
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="select statement test case" time="0.500842">
+    <system-out>* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="insert statement test case" time="0.035637">
+    <system-out>* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed
+* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def res = db.insertStatement("insert into tools values(20,'Sample','ABC')") . passed
+* print res ............................................................... passed
+* match res == "Success" .................................................. passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="update statement test case" time="0.036271">
+    <system-out>* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed
+* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def res = db.insertStatement("insert into tools values(20,'Sample','ABC')") . passed
+* print res ............................................................... passed
+* match res == "Success" .................................................. passed
+* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def rowsAffected = db.updateStatement("update tools set toolName = 'Sample12' where toolId=20") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.FeatureFiles.karateDBTesting" name="delete statement test case" time="0.028347">
+    <system-out>* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def rows = db.selectStatement("select * from tools") .................... passed
+* print rows .............................................................. passed
+* match rows contains "Karate" ............................................ passed
+* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def res = db.insertStatement("insert into tools values(20,'Sample','ABC')") . passed
+* print res ............................................................... passed
+* match res == "Success" .................................................. passed
+* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def rowsAffected = db.updateStatement("update tools set toolName = 'Sample12' where toolId=20") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed
+* def db = Java.type('Misc.MyDbUtil') ..................................... passed
+* def rowsAffected = db.deleteStatement("delete from tools where toolId=20") . passed
+* print rowsAffected ...................................................... passed
+* assert rowsAffected &gt;= 1 ................................................ passed</system-out>
+  </testcase>
+</testsuite>
